@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run locally" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="k8s-operator-workshop" />
+    <working_directory value="$PROJECT_DIR$" />
+    <kind value="PACKAGE" />
+    <package value="github.com/bekk/k8s-operator-workshop/cmd/bekk-ws-operator" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$" />
+    <output_directory value="$PROJECT_DIR$/bin" />
+    <method v="2">
+      <option name="RunConfigurationTask" enabled="true" run_configuration_name="Make build" run_configuration_type="MAKEFILE_TARGET_RUN_CONFIGURATION" />
+    </method>
+  </configuration>
+</component>

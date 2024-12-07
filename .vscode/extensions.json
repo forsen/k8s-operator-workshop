@@ -1,0 +1,7 @@
+{
+	"recommendations": [
+		"golang.go",
+		"lfm.vscode-makefile-term",
+		"ms-vscode.makefile-tools"
+	]
+}

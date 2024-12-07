@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run locally",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${workspaceFolder}/cmd/bekk-ws-operator",
+            "preLaunchTask": "Install CRDs and config"
+        }
+    ]
+}

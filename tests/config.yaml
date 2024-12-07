@@ -1,0 +1,7 @@
+apiVersion: chainsaw.kyverno.io/v1alpha1
+kind: Configuration
+metadata:
+  name: test-configuration
+spec:
+  parallel: 40
+

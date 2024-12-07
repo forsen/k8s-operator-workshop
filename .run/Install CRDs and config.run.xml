@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Install CRDs and config" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile">
+    <makefile filename="$PROJECT_DIR$/Makefile" target="generate install-operator" workingDirectory="$PROJECT_DIR$" arguments="">
+      <envs>
+        <env name="K8S_CONTEXT" value="kind-workshop" />
+      </envs>
+    </makefile>
+    <method v="2" />
+  </configuration>
+</component>

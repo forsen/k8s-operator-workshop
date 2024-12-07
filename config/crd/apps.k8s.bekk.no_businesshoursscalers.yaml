@@ -1,0 +1,53 @@
+---
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  annotations:
+    controller-gen.kubebuilder.io/version: v0.16.5
+  name: businesshoursscalers.apps.k8s.bekk.no
+spec:
+  group: apps.k8s.bekk.no
+  names:
+    kind: BusinessHoursScaler
+    listKind: BusinessHoursScalerList
+    plural: businesshoursscalers
+    singular: businesshoursscaler
+  scope: Namespaced
+  versions:
+  - name: v1alpha1
+    schema:
+      openAPIV3Schema:
+        description: BusinessHoursScaler is the Schema for the businesshoursscalers
+          API
+        properties:
+          apiVersion:
+            description: |-
+              APIVersion defines the versioned schema of this representation of an object.
+              Servers should convert recognized schemas to the latest internal value, and
+              may reject unrecognized values.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
+            type: string
+          kind:
+            description: |-
+              Kind is a string value representing the REST resource this object represents.
+              Servers may infer this from the endpoint the client submits requests to.
+              Cannot be updated.
+              In CamelCase.
+              More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
+            type: string
+          metadata:
+            type: object
+          spec:
+            description: BusinessHoursScalerSpec defines the desired state of BusinessHoursScaler
+            properties:
+              foo:
+                type: string
+            type: object
+          status:
+            description: BusinessHoursScalerStatus defines the observed state of BusinessHoursScaler
+            type: object
+        type: object
+    served: true
+    storage: true
+    subresources:
+      status: {}

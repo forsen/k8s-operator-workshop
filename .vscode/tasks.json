@@ -1,0 +1,9 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+        "label": "Install CRDs and config",
+        "command": "make",
+        "args": ["generate", "install-operator"],
+        "type": "shell"
+    }]
+}
